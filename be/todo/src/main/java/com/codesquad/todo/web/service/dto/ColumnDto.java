@@ -3,14 +3,13 @@ package com.codesquad.todo.web.service.dto;
 import com.codesquad.todo.web.domain.Column;
 import com.codesquad.todo.web.domain.Task;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ColumnDto {
-    private long id;
-    private String columnTitle;
-    private List<TaskDto> taskList;
+    private final long id;
+    private final String columnTitle;
+    private final List<TaskDto> taskList;
 
     public ColumnDto(Column column) {
         this.id = column.getId();
@@ -20,7 +19,7 @@ public class ColumnDto {
 
     private static List<TaskDto> convertTasksToTaskDtos(List<Task> taskList) {
         List<TaskDto> taskDtoList = new ArrayList<>();
-        for(Task task : taskList) {
+        for (Task task : taskList) {
             taskDtoList.add(new TaskDto(task));
         }
         return taskDtoList;

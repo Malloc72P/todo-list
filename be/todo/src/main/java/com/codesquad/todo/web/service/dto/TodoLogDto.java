@@ -1,15 +1,14 @@
 package com.codesquad.todo.web.service.dto;
 
 import com.codesquad.todo.web.domain.TodoLog;
-import com.codesquad.todo.web.domain.User;
 
 import java.time.LocalDateTime;
 
 public class TodoLogDto {
-    private long id;
-    private String action;
-    private String authorName;
-    private LocalDateTime createdDateTime;
+    private final long id;
+    private final String action;
+    private final String authorName;
+    private final LocalDateTime createdDateTime;
 
     public TodoLogDto(TodoLog todoLog) {
         this.id = todoLog.getId();

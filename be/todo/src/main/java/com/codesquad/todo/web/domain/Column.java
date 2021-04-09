@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Column {
-    private long id;
-    private String columnTitle;
-    private List<Task> taskList;
+    private final long id;
+    private final String columnTitle;
+    private final List<Task> taskList;
 
     public Column(long id, String columnTitle) {
         this.id = id;

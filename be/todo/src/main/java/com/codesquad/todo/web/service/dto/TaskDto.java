@@ -2,15 +2,14 @@ package com.codesquad.todo.web.service.dto;
 
 import com.codesquad.todo.web.domain.Task;
 
-import java.io.Serializable;
 import java.time.LocalDateTime;
 
 public class TaskDto {
-    private long id;
-    private String taskTitle;
-    private String taskContent;
-    private String authorName;
-    private LocalDateTime createdDateTime;
+    private final long id;
+    private final String taskTitle;
+    private final String taskContent;
+    private final String authorName;
+    private final LocalDateTime createdDateTime;
 
     public TaskDto(Task task) {
         this.id = task.getId();

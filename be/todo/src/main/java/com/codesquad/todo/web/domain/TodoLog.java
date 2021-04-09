@@ -3,10 +3,10 @@ package com.codesquad.todo.web.domain;
 import java.time.LocalDateTime;
 
 public class TodoLog {
-    private long id;
-    private String action;
-    private User author;
-    private LocalDateTime createdDateTime;
+    private final long id;
+    private final String action;
+    private final User author;
+    private final LocalDateTime createdDateTime;
 
     public TodoLog(long id, String action, User author) {
         this.id = id;
